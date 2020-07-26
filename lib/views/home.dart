@@ -78,6 +78,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
+              width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(25),
@@ -85,7 +86,6 @@ class _HomeState extends State<Home> {
                 ),
                 color: Colors.grey[300],
               ),
-              width: double.infinity,
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                             SizedBox(height: 5),
                             exibirSaldo
                                 ? Text(
-                                    'R\$ 1.000,00',
+                                    'R\$ 150.368,84',
                                     style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
@@ -114,7 +114,7 @@ class _HomeState extends State<Home> {
                                   )
                                 : Container(
                                     height: 23,
-                                    width: 180,
+                                    width: 230,
                                     color: Colors.white,
                                   ),
                           ],
@@ -137,10 +137,87 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 20),
+                    Text(
+                      'Meus Cartões:',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Container(
+                      color: Colors.white,
+                      child: ExpansionTile(
+                        leading: Icon(Icons.payment),
+                        title: Text('Cartão final 5218'),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Text(
+                      'Empréstimos:',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Container(
+                      color: Colors.white,
+                      child: ExpansionTile(
+                        leading: CircleAvatar(child: Icon(Icons.money_off)),
+                        title: Text('Empréstimos'),
+                        subtitle: Text('Organize sua vida financiera.'),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Text(
+                      'Poupança e Investimentos:',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Container(
+                      color: Colors.white,
+                      child: ExpansionTile(
+                        leading: CircleAvatar(child: Icon(Icons.attach_money)),
+                        title: Text('Poupança'),
+                        subtitle: Text('Guarde seu dinheiro agora mesmo.'),
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Container(
+                      color: Colors.white,
+                      child: ExpansionTile(
+                        leading:
+                            CircleAvatar(child: Icon(Icons.monetization_on)),
+                        title: Text('Investimentos'),
+                        subtitle: Text('Faça seu dinheiro render mais.'),
+                      ),
+                    ),
+                    SizedBox(height: 20),
+                    Text(
+                      'Atendimento:',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
+                    ),
+                    SizedBox(height: 5),
+                    Container(
+                      color: Colors.white,
+                      child: ExpansionTile(
+                        leading: CircleAvatar(
+                          child: Icon(Icons.contacts),
+                        ),
+                        title: Text(
+                          'Fale com a gente, encontre nossos contatos ou procure uma agência.',
+                          style: TextStyle(fontSize: 14),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
