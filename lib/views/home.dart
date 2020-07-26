@@ -84,7 +84,7 @@ class _HomeState extends State<Home> {
                   topLeft: Radius.circular(25),
                   topRight: Radius.circular(25),
                 ),
-                color: Colors.grey[300],
+                color: Colors.grey[200],
               ),
               child: Padding(
                 padding: const EdgeInsets.all(20),
@@ -145,7 +145,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     SizedBox(height: 5),
-                    Container(
+                    Card(
                       color: Colors.white,
                       child: ExpansionTile(
                         leading: Icon(Icons.payment),
@@ -160,7 +160,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     SizedBox(height: 5),
-                    Container(
+                    Card(
                       color: Colors.white,
                       child: ExpansionTile(
                         leading: CircleAvatar(child: Icon(Icons.money_off)),
@@ -176,7 +176,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     SizedBox(height: 5),
-                    Container(
+                    Card(
                       color: Colors.white,
                       child: ExpansionTile(
                         leading: CircleAvatar(child: Icon(Icons.attach_money)),
@@ -185,7 +185,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     SizedBox(height: 5),
-                    Container(
+                    Card(
                       color: Colors.white,
                       child: ExpansionTile(
                         leading:
@@ -202,7 +202,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     SizedBox(height: 5),
-                    Container(
+                    Card(
                       color: Colors.white,
                       child: ExpansionTile(
                         leading: CircleAvatar(
@@ -214,6 +214,7 @@ class _HomeState extends State<Home> {
                         ),
                       ),
                     ),
+                    SizedBox(height: 50),
                   ],
                 ),
               ),
